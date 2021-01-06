@@ -1,6 +1,6 @@
 import React from "react";
 
-// import ProfilePage from "../ProfilePage";
+import ProfilePage from "../ProfilePage";
 
 import {
   Container,
@@ -28,7 +28,7 @@ const Main: React.FC = () => {
         </ProfileInfo>
       </Header>
       
-      {/* <ProfilePage /> o feed em si */}
+      <ProfilePage />  {/* o feed em si */}
       
       <BottomMenu>
         {" "}
