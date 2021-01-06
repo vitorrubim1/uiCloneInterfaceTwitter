@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
+
 import { Cake, LocationOn } from "../../styles/icons";
+import Button from "../Button";
 
 export const Container = styled.div`
   display: flex;
@@ -19,7 +21,7 @@ export const Banner = styled.div`
 
   width: 100%;
   height: min(33vw, 199px); //máximo 33vw e minimo 199px
-  
+
   background: var(--twitter);
 
   position: relative;
@@ -87,6 +89,21 @@ export const ProfileData = styled.div`
   }
 `;
 
+export const EditButton = styled(Button)`
+  position: absolute;
+  top: 2vw;
+  right: 7px;
+
+  padding: 4px 16px;
+  font-size: 13px; 
+
+  @media(max-width){
+    top: 10px;
+    padding: 10px 19px;
+    font-size: 15px;
+  }
+`;
+
 const iconCSS = css`
   width: 20px;
   height: 20px;
@@ -108,7 +125,8 @@ export const Followage = styled.div`
     font-size: 15px;
     color: var(--gray);
 
-    & + span { //segundo span somente
+    & + span {
+      //segundo span somente
       margin-left: 20px;
     }
   }
